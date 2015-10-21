@@ -9,10 +9,211 @@
         <!-- Поле для фильтрации по городу -->
         <input
             type="text"
+            id="city"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <div id="timeTablo">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Тип рейса</th>
+                        <th>Номер рейса</th>
+                        <th>Авиакомпания</th>
+                        <th>Логотип авиакомпании</th>
+                        <th>Тип воздушного судна</th>
+                        <th>Аэропорт назначения</th>
+                        <th>Плановое время вылета или прилёта</th>
+                        <th>Номер терминала</th>
+                        <th>Статус рейса</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Выведено: 15 рейсов</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>S7-55</td>
+                        <td>S7</td>
+                        <td><img class="airlineslogo" alt="S7" title="S7" src="s7.gif"></td>
+                        <td>A-319</td>
+                        <td>МОСКВА/ДМД</td>
+                        <td>21&nbsp;Окт&nbsp;16:15</td>
+                        <td>A</td>
+                        <td>вылетел</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>UT-112</td>
+                        <td>UTair</td>
+                        <td><img class="airlineslogo" alt="UTair" title="UTair" src="utair.gif"></td>
+                        <td>A-321</td>
+                        <td>ХАНТЫ-МАНСИЙСК</td>
+                        <td>21&nbsp;Окт&nbsp;16:30</td>
+                        <td>A</td>
+                        <td>посадка закончена</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>D9-5345</td>
+                        <td>Донавиа</td>
+                        <td><img class="airlineslogo" alt="Донавиа" title="Донавиа" src="donavia.gif"></td>
+                        <td>A-320</td>
+                        <td>СОЧИ</td>
+                        <td>21&nbsp;Окт&nbsp;16:40</td>
+                        <td>C</td>
+                        <td>приземлился</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>DP-408</td>
+                        <td>Победа</td>
+                        <td><img class="airlineslogo" alt="Победа" title="Победа" src="pobeda.gif"></td>
+                        <td>B-737-800W</td>
+                        <td>МОСКВА/ВНК</td>
+                        <td>21&nbsp;Окт&nbsp;17:00</td>
+                        <td>A</td>
+                        <td>летит</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>S7-88</td>
+                        <td>S7</td>
+                        <td><img class="airlineslogo" alt="S7" title="S7" src="s7.gif"></td>
+                        <td>A-320</td>
+                        <td>НОВОСИБИРСК</td>
+                        <td>21&nbsp;Окт&nbsp;17:10</td>
+                        <td>C</td>
+                        <td>по расписанию</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>AF-4431</td>
+                        <td>Airfrance</td>
+                        <td><img class="airlineslogo" alt="Airfrance" title="Airfrance" src="airfr.gif"></td>
+                        <td>A-319</td>
+                        <td>МЮНХЕН</td>
+                        <td>21&nbsp;Окт&nbsp;17:15</td>
+                        <td>B</td>
+                        <td>ожидание посадки</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>S7-75</td>
+                        <td>S7</td>
+                        <td><img class="airlineslogo" alt="S7" title="S7" src="s7.gif"></td>
+                        <td>A-321</td>
+                        <td>ТЕЛЬ-АВИВ</td>
+                        <td>21&nbsp;Окт&nbsp;17:20</td>
+                        <td>B</td>
+                        <td>ожидание посадки</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>UT-320</td>
+                        <td>UTair</td>
+                        <td><img class="airlineslogo" alt="UTair" title="UTair" src="utair.gif"></td>
+                        <td>AT-72-5</td>
+                        <td>ДУБАЙ</td>
+                        <td>21&nbsp;Окт&nbsp;17:25</td>
+                        <td>B</td>
+                        <td>по расписанию</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>S7-255</td>
+                        <td>S7</td>
+                        <td><img class="airlineslogo" alt="S7" title="S7" src="s7.gif"></td>
+                        <td>A-320</td>
+                        <td>КАЗАНЬ</td>
+                        <td>21&nbsp;Окт&nbsp;17:35</td>
+                        <td>A</td>
+                        <td>регистрация</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>AF-3235</td>
+                        <td>Airfrance</td>
+                        <td><img class="airlineslogo" alt="Airfrance" title="Airfrance" src="airfr.gif"></td>
+                        <td>A-321</td>
+                        <td>ПАРИЖ</td>
+                        <td>21&nbsp;Окт&nbsp;17:45</td>
+                        <td>B</td>
+                        <td>по расписанию</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>DP-120</td>
+                        <td>Победа</td>
+                        <td><img class="airlineslogo" alt="Победа" title="Победа" src="pobeda.gif"></td>
+                        <td>B-737-800W</td>
+                        <td>СОЧИ</td>
+                        <td>21&nbsp;Окт&nbsp;17:50</td>
+                        <td>C</td>
+                        <td>регистрация</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Прилет" title="Прилет" src="prilet.gif"></td>
+                        <td>D9-3544</td>
+                        <td>Донавиа</td>
+                        <td><img class="airlineslogo" alt="Донавиа" title="Донавиа" src="donavia.gif"></td>
+                        <td>A-319</td>
+                        <td>РОСТОВ-НА-ДОНУ</td>
+                        <td>21&nbsp;Окт&nbsp;17:55</td>
+                        <td>C</td>
+                        <td>по расписанию</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>D9-2534</td>
+                        <td>Донавиа</td>
+                        <td><img class="airlineslogo" alt="Донавиа" title="Донавиа" src="donavia.gif"></td>
+                        <td>A-319</td>
+                        <td>КРАСНОДАР</td>
+                        <td>21&nbsp;Окт&nbsp;18:00</td>
+                        <td>C</td>
+                        <td>регистрация</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>UT-137</td>
+                        <td>UTair</td>
+                        <td><img class="airlineslogo" alt="UTair" title="UTair" src="utair.gif"></td>
+                        <td>A-321</td>
+                        <td>УФА</td>
+                        <td>21&nbsp;Окт&nbsp;18:05</td>
+                        <td>A</td>
+                        <td>регистрация</td>
+                    </tr>
+                    <tr>
+                        <td><img class="tourtypeimage" alt="Вылет" title="Вылет" src="vylet.gif"></td>
+                        <td>S7-314</td>
+                        <td>S7</td>
+                        <td><img class="airlineslogo" alt="S7" title="S7" src="s7.gif"></td>
+                        <td>A-319</td>
+                        <td>ТОМСК</td>
+                        <td>21&nbsp;Окт&nbsp;18:15</td>
+                        <td>A</td>
+                        <td>регистрация</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form name="" action="" method="POST">
+            <fieldset>
+                <legend>Отправить данные о рейсе на телефон</legend>
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" type="tel" placeholder="Введите номер телефона"
+                    pattern="^((\d+|\+(\d+))[\- ]?)?((\d{3})|\(\d{3}\)[\- ]?)+?[\d\- ]{7,10}$" required><br>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Введите электронный адрес"
+                    pattern="^([a-zа-я0-9_\-]+\.)*[a-zа-я0-9_\-]+@([a-zа-я0-9][a-zа-я0-9\-]*[a-zа-я0-9]\.)+[a-zа-я]{2,6}$"
+                    required><br>
+            </fieldset>
+            <p><button type="submit">Отправить</button></p>
+        </form>
     </body>
 </html>

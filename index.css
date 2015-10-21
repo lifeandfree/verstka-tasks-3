@@ -1,0 +1,110 @@
+.tourtypeimage
+{
+    height: 40;
+}
+
+.airlineslogoimage
+{
+    height: 35px;
+}
+
+table
+{
+	border-spacing: 2px; 
+	border-collapse: separate;
+	border: solid 2px rgb(255, 255, 255);
+	border-spacing: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+
+tfoot
+{
+    border-bottom: 0px;
+    text-align: center;
+    padding: 3px;
+    height: 20px;
+}
+
+table thead th
+{
+    background-color: rgb(221, 221, 221);
+    border: solid 1px rgb(221, 221, 221);
+    color: rgb(51, 107, 107);
+    padding: 12px;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+table tbody td, table thead th
+{
+    position: relative;
+}
+
+th
+{
+    border: 0px solid rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
+
+tr, td
+{
+	cursor: pointer;
+}
+
+table tbody td
+{
+    border: solid 1px #DDD;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);;
+}
+
+table tbody td:hover::before
+{
+    background: rgb(216, 189, 189);
+    content:"\00a0";
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -1;
+}
+
+table tbody td:hover::after
+{
+    background: rgb(216, 189, 189);
+    content:"\00a0";
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: rgba(227, 227, 227, .5);
+}
+
+th:nth-child(1)
+{
+    width: 1%;
+}
+
+th:nth-child(4)
+{
+    width: 7%;
+}
+
+button
+{
+    display: none;	
+}
+
+form:valid button {
+    display: block;
+}
