@@ -30,7 +30,7 @@
                 </thead>
                 <tfoot>
                     <tr>
-                        <td colspan="5">Выведено: 15 рейсов</td>
+                        <td colspan="9">Выведено: 15 рейсов</td>
                     </tr>
                 </tfoot>
                 <tbody>
@@ -207,11 +207,13 @@
                 <legend>Отправить данные о рейсе на телефон</legend>
                 <label for="phone">Телефон</label>
                 <input id="phone" name="phone" type="tel" placeholder="Введите номер телефона"
-                    pattern="^((\d+|\+(\d+))[\- ]?)?((\d{3})|\(\d{3}\)[\- ]?)+?[\d\- ]{7,10}$" required><br>
+                    pattern="^((\d+|\+(\d+))[\- ]?)?((\d{3})|\(\d{3}\)[\- ]?)+?[\d\- ]{7,10}$" required>
+                <span class="form_hint">Введите телефон в формате +0 (000) 0000000</span><br>
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" placeholder="Введите электронный адрес"
-                    pattern="^([a-zа-я0-9_\-]+\.)*[a-zа-я0-9_\-]+@([a-zа-я0-9][a-zа-я0-9\-]*[a-zа-я0-9]\.)+[a-zа-я]{2,6}$"
-                    required><br>
+                    pattern="^([a-z0-9_\-]+\.)*[a-z0-9_\-]+@([a-z0-9][a-z0-9\-]*[a-z0-9]\.)+[a-z]{2,6}$"
+                    required>
+                <span class="form_hint">Введите email в формате example@example.com</span><br><br>
             </fieldset>
             <p><button type="submit">Отправить</button></p>
         </form>

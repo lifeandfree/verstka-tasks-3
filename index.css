@@ -1,6 +1,6 @@
 .tourtypeimage
 {
-    height: 40;
+    height: 40px;
 }
 
 .airlineslogoimage
@@ -10,7 +10,7 @@
 
 table
 {
-	border-spacing: 2px; 
+	border-spacing: 2px;
 	border-collapse: separate;
 	border: solid 2px rgb(255, 255, 255);
 	border-spacing: 0;
@@ -20,7 +20,7 @@ table
 
 tfoot
 {
-    border-bottom: 0px;
+    border-bottom: 0;
     text-align: center;
     padding: 3px;
     height: 20px;
@@ -102,9 +102,46 @@ th:nth-child(4)
 
 button
 {
-    display: none;	
+    display: none !important;
 }
 
-form:valid button {
+form:valid button
+{
     display: block;
+}
+
+.form_hint
+{
+    background: rgb(212, 82, 82);
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+.form_hint::before
+{
+    content: "\25C0";
+    color: rgb(212, 82, 82);
+    position: absolute;
+    top:1px;
+    left:-6px;
+}
+
+form input:focus + .form_hint
+{
+    display: inline;
+}
+
+form input:required:valid + .form_hint
+{
+    background: rgb(40, 146, 31);
+}
+
+form input:required:valid + .form_hint::before
+{
+    color:rgb(40, 146, 31);
 }
