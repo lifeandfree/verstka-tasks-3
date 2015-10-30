@@ -102,7 +102,7 @@ th:nth-child(4)
 
 button
 {
-    display: none !important;
+    display: none;
 }
 
 form:valid button
@@ -113,7 +113,7 @@ form:valid button
 .form_hint
 {
     background: rgb(212, 82, 82);
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
     color: white;
     margin-left:8px;
     padding: 1px 6px;
@@ -127,8 +127,8 @@ form:valid button
     content: "\25C0";
     color: rgb(212, 82, 82);
     position: absolute;
-    top:1px;
-    left:-6px;
+    top: 1px;
+    left: -6px;
 }
 
 form input:focus + .form_hint
